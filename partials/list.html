@@ -1,0 +1,46 @@
+<ion-header-bar classic="bar-dark">
+<h1 class="title">GOT CHARACTERS</h1>
+</ion-header-bar>
+<ion-content>
+
+<ion-refresher pulling-text="PULL TO REFRESH" refreshing-text="LOADING...." on-refresh="loadChars()">
+</ion-refresher>
+
+	<ion-list id="mainList">
+		<p class="introText"> PULL DOWN TO REFRESH LIST</p>
+		<ion-item ng-repeat="char in chars" class="item item-thumbnail-left">
+		<img data-ng-src="img/{{newHouse[$index]}}.png" alt="House Banners">
+			<h2>{{char.name}}</h2>
+			<p>Title: <span data-ng-bind-html="char.titles"></p>
+			<a href="#details/{{$index}}">MORE INFORMATION</a>
+		</ion-item>
+	<ion-list>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
